@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import Header from './commponents/Header'
 import Footer from './commponents/Footer'
 import Producto from './commponents/Producto'
+import Carrito from './commponents/Carrito'
 
 function App() {
 
@@ -31,6 +32,9 @@ function App() {
           agregarProducto={agregarProducto}
         /> 
       ))}
+      <Carrito
+        carrito={carrito}
+      />
       <Footer
         fecha={fecha}
       />
